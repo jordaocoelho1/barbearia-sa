@@ -1,0 +1,38 @@
+.cards-resumo {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+.card-resumo {
+  background: linear-gradient(135deg, #007bff, #004080);
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  color: white;
+  font-size: 18px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card-resumo:hover {
+  transform: translateY(-5px);
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.card-resumo .icone {
+  font-size: 40px;
+  margin-bottom: 15px;
+}
+
+.card-resumo h3 {
+  font-size: 22px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.card-resumo p {
+  font-size: 26px;
+  font-weight: bold;
+}

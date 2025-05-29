@@ -1,0 +1,39 @@
+.card-acoes {
+  background: linear-gradient(135deg, #ff5733, #c70039);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  color: white;
+  font-size: 18px;
+  margin-top: 20px;
+}
+
+.card-acoes h3 {
+  font-size: 22px;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.botoes {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+}
+
+.botoes button {
+  background: white;
+  color: #c70039;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+
+.botoes button:hover {
+  background: #f5f5f5;
+}

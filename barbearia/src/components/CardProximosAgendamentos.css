@@ -1,0 +1,29 @@
+.card-agendamentos {
+  background: linear-gradient(135deg, #28a745, #1e7e34);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  color: white;
+  font-size: 18px;
+  margin-top: 20px;
+}
+
+.card-agendamentos h3 {
+  font-size: 22px;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.card-agendamentos ul {
+  list-style: none;
+  padding: 0;
+}
+
+.card-agendamentos li {
+  background: rgba(255, 255, 255, 0.2);
+  padding: 10px;
+  margin: 5px 0;
+  border-radius: 5px;
+  font-weight: bold;
+}
