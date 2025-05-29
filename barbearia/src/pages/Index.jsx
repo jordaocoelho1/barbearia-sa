@@ -1,10 +1,9 @@
 import CardAcoes from "../components/CardAcoes";
 import CardResumo from "../components/CardResumo";
-import "./Home.css";
 import CardProximosAgendamentos from "../components/CardProximosAgendamentos";
 import GraficoReceita from "../components/GraficoReceita";
 
-function Home() {
+function Index() {
   return (
     <div className="home-container">
       <h1>Dashboard 📊</h1>
@@ -25,4 +24,4 @@ function Home() {
   );
 }
 
-export default Home;
+export default Index;
