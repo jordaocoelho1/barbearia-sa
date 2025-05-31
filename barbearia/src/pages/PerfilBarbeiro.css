@@ -1,0 +1,271 @@
+/* Estilo para a página de Perfil do Barbeiro */
+.perfil-barbeiro {
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* Grid de containers superiores */
+.perfil-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+/* Container de resumo do dia */
+.resumo-container {
+  background: white;
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.resumo-titulo {
+  font-size: 1.25rem;
+  color: #1e293b;
+  margin: 0 0 1.5rem 0;
+}
+
+.resumo-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
+
+.resumo-item {
+  text-align: center;
+  padding: 1rem;
+  background: #f8fafc;
+  border-radius: 8px;
+}
+
+.resumo-valor {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #1e293b;
+  margin-bottom: 0.25rem;
+}
+
+.resumo-label {
+  font-size: 0.875rem;
+  color: #64748b;
+}
+
+/* Container de faturamento */
+.faturamento-container {
+  background: white;
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.faturamento-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.faturamento-titulo {
+  font-size: 1.25rem;
+  color: #1e293b;
+  margin: 0;
+}
+
+.faturamento-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
+
+.faturamento-item {
+  text-align: center;
+  padding: 1rem;
+  background: #f8fafc;
+  border-radius: 8px;
+}
+
+.faturamento-valor {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #16a34a;
+  margin-bottom: 0.25rem;
+}
+
+.faturamento-label {
+  font-size: 0.875rem;
+  color: #64748b;
+}
+
+/* Container de agendamentos */
+.agendamentos-container {
+  background: white;
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  margin-top: 2rem;
+}
+
+.agendamentos-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.agendamentos-titulo {
+  font-size: 1.25rem;
+  color: #1e293b;
+  margin: 0;
+}
+
+.filtro-data {
+  padding: 0.5rem 1rem;
+  border: 1px solid #e2e8f0;
+  border-radius: 6px;
+  font-size: 0.875rem;
+  color: #1e293b;
+}
+
+.agendamentos-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1.5rem;
+}
+
+.agendamento-card {
+  background: white;
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.agendamento-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.agendamento-horario {
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: #1e293b;
+  margin-bottom: 1rem;
+}
+
+.agendamento-info {
+  display: grid;
+  gap: 0.75rem;
+  margin-bottom: 1rem;
+}
+
+.agendamento-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.agendamento-label {
+  color: #64748b;
+  font-size: 0.875rem;
+}
+
+.agendamento-valor {
+  color: #1e293b;
+  font-weight: 500;
+}
+
+.status-badge {
+  padding: 0.25rem 0.75rem;
+  border-radius: 9999px;
+  font-size: 0.75rem;
+  font-weight: 500;
+}
+
+.status-confirmado {
+  background: #dcfce7;
+  color: #166534;
+}
+
+.status-pendente {
+  background: #fef9c3;
+  color: #854d0e;
+}
+
+.status-cancelado {
+  background: #fee2e2;
+  color: #991b1b;
+}
+
+.agendamento-acoes {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+  justify-content: flex-end;
+}
+
+.agendamento-btn {
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  font-size: 0.875rem;
+  font-weight: 500;
+  cursor: pointer;
+  border: none;
+  transition: background-color 0.2s ease;
+}
+
+.btn-confirmar {
+  background-color: #22c55e;
+  color: white;
+}
+
+.btn-confirmar:hover {
+  background-color: #16a34a;
+}
+
+.btn-cancelar {
+  background-color: #fee2e2;
+  color: #991b1b;
+}
+
+.btn-cancelar:hover {
+  background-color: #fecaca;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  .perfil-barbeiro {
+    padding: 1rem;
+  }
+
+  .perfil-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .resumo-grid,
+  .faturamento-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .agendamentos-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .agendamento-card {
+    margin: 0;
+    border-radius: 8px;
+  }
+
+  .agendamento-acoes {
+    flex-direction: column;
+  }
+
+  .agendamento-btn {
+    width: 100%;
+  }
+}

@@ -1,0 +1,321 @@
+/* Estilo para a página de Perfil do Cliente */
+.perfil-cliente {
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* Grid de containers superiores */
+.perfil-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+/* Container de dados do cliente */
+.dados-container {
+  background: white;
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.dados-header {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.avatar {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background: #f1f5f9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+}
+
+.dados-nome {
+  margin: 0;
+  font-size: 1.5rem;
+  color: #1e293b;
+}
+
+.dados-email {
+  color: #64748b;
+  margin: 0;
+}
+
+.dados-info {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+}
+
+.info-item {
+  margin-bottom: 1rem;
+}
+
+.info-label {
+  font-size: 0.875rem;
+  color: #64748b;
+  margin-bottom: 0.25rem;
+}
+
+.info-valor {
+  font-size: 1rem;
+  color: #1e293b;
+  font-weight: 500;
+}
+
+/* Container de fidelidade */
+.fidelidade-container {
+  background: white;
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.fidelidade-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.fidelidade-titulo {
+  font-size: 1.25rem;
+  color: #1e293b;
+  margin: 0;
+}
+
+.pontos-badge {
+  background: #818cf8;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 9999px;
+  font-weight: 600;
+}
+
+.progresso-container {
+  margin-bottom: 1.5rem;
+}
+
+.progresso-info {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.5rem;
+  color: #64748b;
+  font-size: 0.875rem;
+}
+
+.progresso-barra {
+  width: 100%;
+  height: 8px;
+  background: #e2e8f0;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.progresso-valor {
+  height: 100%;
+  background: #818cf8;
+  border-radius: 4px;
+  transition: width 0.3s ease;
+}
+
+.promocoes {
+  background: #f8fafc;
+  border-radius: 8px;
+  padding: 1rem;
+}
+
+.promocao-item {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 0.75rem;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.promocao-item:last-child {
+  border-bottom: none;
+}
+
+.promocao-icon {
+  font-size: 1.5rem;
+}
+
+.promocao-info h4 {
+  margin: 0;
+  color: #1e293b;
+  font-size: 1rem;
+}
+
+.promocao-info p {
+  margin: 0.25rem 0 0;
+  color: #64748b;
+  font-size: 0.875rem;
+}
+
+/* Container de agendamentos */
+.agendamentos-container {
+  background: white;
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  margin-top: 2rem;
+}
+
+.agendamentos-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.agendamentos-titulo {
+  font-size: 1.25rem;
+  color: #1e293b;
+  margin: 0;
+}
+
+.ver-todos {
+  color: #818cf8;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 0.875rem;
+}
+
+.agendamentos-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+.agendamento-card {
+  background: white;
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.agendamento-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.agendamento-data {
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: #1e293b;
+  margin-bottom: 1rem;
+}
+
+.agendamento-servico {
+  font-size: 1.125rem;
+  color: #1e293b;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.agendamento-info {
+  display: grid;
+  gap: 0.75rem;
+  margin-bottom: 1.5rem;
+}
+
+.agendamento-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.agendamento-label {
+  color: #64748b;
+  font-size: 0.875rem;
+}
+
+.agendamento-valor {
+  color: #1e293b;
+  font-weight: 500;
+}
+
+.agendamento-acoes {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+  justify-content: flex-end;
+}
+
+.agendamento-btn {
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  font-size: 0.875rem;
+  font-weight: 500;
+  cursor: pointer;
+  border: none;
+  transition: background-color 0.2s ease;
+}
+
+.btn-reagendar {
+  background-color: #818cf8;
+  color: white;
+}
+
+.btn-reagendar:hover {
+  background-color: #6366f1;
+}
+
+.btn-cancelar {
+  background-color: #fee2e2;
+  color: #991b1b;
+}
+
+.btn-cancelar:hover {
+  background-color: #fecaca;
+}
+
+/* Removendo estilos antigos da tabela */
+.tabela-container,
+.tabela-agendamentos {
+  display: none;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  .perfil-cliente {
+    padding: 1rem;
+  }
+
+  .perfil-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .dados-info {
+    grid-template-columns: 1fr;
+  }
+
+  .agendamentos-container {
+    padding: 1rem;
+  }
+
+  .agendamentos-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .agendamento-card {
+    margin: 0;
+    border-radius: 8px;
+  }
+}

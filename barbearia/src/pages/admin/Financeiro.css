@@ -1,0 +1,379 @@
+/* Estilo padronizado para o Financeiro, igual Clientes/GestaoAtendimentos */
+.financeiro-container {
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.page-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.page-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #1e293b;
+  margin: 0;
+}
+
+.nova-transacao-btn {
+  background-color: #22c55e;
+  color: white;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 0.875rem;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  transition: background-color 0.2s ease;
+}
+
+.nova-transacao-btn:hover {
+  background-color: #16a34a;
+}
+
+.cards-resumo {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.card {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card-titulo {
+  color: #64748b;
+  font-size: 0.875rem;
+  margin-bottom: 0.5rem;
+  display: block;
+}
+
+.card-valor {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #1e293b;
+}
+
+.card.receita {
+  border-left: 4px solid #22c55e;
+}
+
+.card.despesa {
+  border-left: 4px solid #ef4444;
+}
+
+.card.lucro {
+  border-left: 4px solid #818cf8;
+}
+
+.card.transacoes {
+  border-left: 4px solid #f59e0b;
+}
+
+.filtros {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 24px;
+  flex-wrap: wrap;
+}
+
+.tabela-container {
+  margin-top: 24px;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  overflow-x: auto;
+  width: 100%;
+}
+
+.tabela-financeiro {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 800px;
+  box-sizing: border-box;
+}
+
+.tabela-financeiro th,
+.tabela-financeiro td {
+  padding: 16px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+.tabela-financeiro th {
+  font-weight: 600;
+  color: #333;
+  background: #f8fafc;
+}
+
+.tabela-financeiro tr:hover {
+  background: #f1f5f9;
+}
+
+.status-badge {
+  padding: 0.25rem 0.75rem;
+  border-radius: 9999px;
+  font-size: 0.75rem;
+  font-weight: 500;
+}
+
+.status-pago {
+  background: #dcfce7;
+  color: #166534;
+}
+
+.status-pendente {
+  background: #fef9c3;
+  color: #854d0e;
+}
+
+.status-cancelado {
+  background: #fee2e2;
+  color: #991b1b;
+}
+
+.acoes-btn {
+  padding: 6px 12px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 500;
+  transition: all 0.2s;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  min-height: 36px;
+}
+
+.editar-btn {
+  background: #e0f2fe;
+  color: #0369a1;
+}
+
+.excluir-btn {
+  background: #fee2e2;
+  color: #991b1b;
+}
+
+.acoes-btn:hover {
+  filter: brightness(0.95);
+}
+
+.transacoes-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+.transacao-card {
+  background: white;
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.transacao-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.transacao-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.transacao-data {
+  font-size: 1rem;
+  color: #1e293b;
+  font-weight: 500;
+}
+
+.transacao-tipo {
+  padding: 0.25rem 0.75rem;
+  border-radius: 9999px;
+  font-size: 0.75rem;
+  font-weight: 500;
+}
+
+.tipo-receita {
+  background: #dcfce7;
+  color: #166534;
+}
+
+.tipo-despesa {
+  background: #fee2e2;
+  color: #991b1b;
+}
+
+.transacao-info {
+  display: grid;
+  gap: 0.75rem;
+  margin-bottom: 1rem;
+}
+
+.transacao-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.transacao-label {
+  color: #64748b;
+  font-size: 0.875rem;
+}
+
+.transacao-valor {
+  color: #1e293b;
+  font-weight: 500;
+}
+
+.valor-receita {
+  color: #166534;
+}
+
+.valor-despesa {
+  color: #991b1b;
+}
+
+.status-badge {
+  padding: 0.25rem 0.75rem;
+  border-radius: 9999px;
+  font-size: 0.75rem;
+  font-weight: 500;
+}
+
+.status-pago {
+  background: #dcfce7;
+  color: #166534;
+}
+
+.status-pendente {
+  background: #fef9c3;
+  color: #854d0e;
+}
+
+.status-cancelado {
+  background: #fee2e2;
+  color: #991b1b;
+}
+
+.transacao-acoes {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 1rem;
+}
+
+.transacao-btn {
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  font-size: 0.875rem;
+  font-weight: 500;
+  cursor: pointer;
+  border: none;
+  transition: background-color 0.2s ease;
+}
+
+.btn-detalhes {
+  background-color: #818cf8;
+  color: white;
+}
+
+.btn-detalhes:hover {
+  background-color: #6366f1;
+}
+
+/* Removendo estilos antigos da tabela */
+.tabela-container,
+.tabela-transacoes {
+  display: none;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  .financeiro-container {
+    padding: 1rem;
+  }
+
+  .page-header {
+    flex-direction: column;
+    gap: 1rem;
+    align-items: stretch;
+  }
+
+  .page-title {
+    text-align: center;
+  }
+
+  .nova-transacao-btn {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .cards-resumo {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .transacoes-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .transacao-card {
+    margin: 0;
+    border-radius: 8px;
+  }
+
+  .transacao-info {
+    gap: 0.5rem;
+  }
+
+  .transacao-acoes {
+    flex-direction: column;
+  }
+
+  .transacao-btn {
+    width: 100%;
+  }
+}
+
+/* Ajustes para telas muito pequenas */
+@media (max-width: 480px) {
+  .card-valor {
+    font-size: 1.25rem;
+  }
+}
+
+.tabela-container::-webkit-scrollbar {
+  height: 6px;
+}
+.tabela-container::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 3px;
+}
+.tabela-container::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 3px;
+}
+.tabela-container::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
